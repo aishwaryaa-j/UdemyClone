@@ -76,6 +76,16 @@ border-bottom: solid black 1px;
     color: white;
     padding: 10px;
     border-radius: 20px;
+    border: solid black 1px;
+    cursor: pointer;
+
+}
+.categories p:hover{
+    background-color: transparent;
+    transition: 2s;
+    color: black;
+        border: solid black 1px;
+
 }
 .sale_image img{
     width: 100%;
@@ -90,6 +100,20 @@ border-bottom: solid black 1px;
     left:5%;
     border-radius: 5px;
     background-color: #B09371;
+    animation-name: zoom;
+    animation-duration: 2s;
+    opacity:0;
+    animation-fill-mode: forwards;
+}
+@keyframes zoom{
+    0%{
+        transform:scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity:1;
+    }
 }
 .recommended{
     padding:10px;
